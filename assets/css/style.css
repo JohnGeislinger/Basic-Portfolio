@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    background-image: url(../images/cork.jpg);
+    background-repeat: repeat;
 }
 
 header {
@@ -63,38 +65,43 @@ nav a:hover {
     opacity: 1.0;
 }
 
+.slash {
+    opacity: 0.1;
+}
+
 .navbar, .content, .footer {
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    color: #cccccc;
+    color: #777777;
 }
 
 .wrapper {
     max-width: 960px;
+    min-height: 100%;
     margin: 0 auto;
-    background-image: url(../Basic-Portfolio/assets/images/decal.jpg);
-    background-repeat: repeat;
 }
 
 
 h2 {
     font-size: 28px;
-    ont-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
     color: #4aaaa5;
     padding-bottom: 20px;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid #dddddd;
 }
 
 .content {
     clear: both;
-    border: 1px solid #cccccc;
+    border: 1px solid #dddddd;
     width: auto;
     font-size: 18px;
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 25px;
+    background: #ffffff;
 }
 
-img {
+#profile {
     float: left;
     margin: 0px 25px 0px 0px;
 }
@@ -112,4 +119,38 @@ p {
     text-align: center;
     padding: 60px 0px 10px 0px;
     flex-shrink: 0;
+    font-size: 12px;
+}
+
+/* Contact */
+
+.form {
+    max-width: 960px;
+}
+
+#name, #email, #message {
+    padding: 5px;
+    width: calc(100% - 14px);
+    color: #777777;
+}
+
+#message {
+    height: 150px;
+}
+
+#submit {
+    color: #ffffff;
+    background: #4aaaa5;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+
+h4 {
+    padding: 17px 0px 3px 0px;
+}
+
+/* Portfolio */
+
+.content-hangman, .content-rpg, .content-trivia, .content-widget, .content-rps {
+    margin: 25px 25px 25px 0px;
 }
