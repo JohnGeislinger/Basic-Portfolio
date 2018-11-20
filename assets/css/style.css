@@ -145,7 +145,7 @@ p {
     font-weight: bold;
 }
 
-h4 {
+.form {
     padding: 17px 0px 3px 0px;
 }
 
@@ -153,4 +153,55 @@ h4 {
 
 .content-hangman, .content-rpg, .content-trivia, .content-widget, .content-rps {
     margin: 25px 25px 25px 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 225px 225px;
+    grid-template-rows: 250px 225px 225px;
+    overflow: auto;
+}
+
+.content-hangman {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+}
+
+.content-rpg {
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+}
+
+.content-trivia {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0px;
+    position: relative;
+}
+
+.content-widget {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0px;
+    position: relative;
+}
+
+.content-rps {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 0px;
+    position: relative;
+}
+
+.label {
+    margin: 0px;
+    padding: 15px 0px;
+    text-align: center;
+    color: #ffffff;
+    background: #4aaaa5;
+    position: absolute;
+    bottom: 10px;
+    width: 200px;
 }
